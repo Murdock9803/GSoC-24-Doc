@@ -10,7 +10,7 @@ function About() {
             <h1 className='font-bold text-[3.5vw]  text-zinc-900'>AYUSH SAHU &lt;Murdock9803/&gt;</h1>
             <div className='w-full h-[2px] bg-zinc-900'></div>
             <a onMouseEnter={()=> setCursor(true)} onMouseLeave={()=> setCursor(false)} className='rounded-full inline-block my-5' target='_blanc' href="https://murdock9803.github.io/Ayush-Portfolio/">
-                <button className='uppercase h-[43px] w-[160px] text-[15px] bg-zinc-900 rounded-full flex items-center text-white'><div className='w-[115px] h-full flex pl-[25px] items-center rounded-l-full'>Read More</div>
+                <button className='uppercase h-[43px] w-[200px] text-[15px] bg-zinc-900 rounded-full flex items-center text-white'><div className='w-[175px] h-full flex pl-[25px] items-center rounded-l-full'>More About Me</div>
                 <div className='w-[45px] h-full flex justify-center items-center'><div className={`bg-zinc-100 transition-all ease-in-out duration-100ms ${cursor ? "w-5 h-5" : "w-2 h-2"} rounded-full`}></div></div>
             </button>
             </a>
