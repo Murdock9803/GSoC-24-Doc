@@ -17,7 +17,7 @@ function About() {
             <p className='text-[20px] my-5 px-5 py-4 text-[#A2B29F] font-md'>Hello! I am Ayush, a developer based in India, currently pursuing my Bachelors and Masters degrees from IIT(BHU), Varanasi. As my username suggests, I'm a big fan of Daredevil [Matt Murdock]. This website serves as my documentation for Google Summer of Code 2024. I created this platform to share not only the technical aspects of my journey but also the challenges, learnings, and everything in between. Building and developing is my passion, and transforming my GSoC journey into a cool site instead of plain text was an exciting idea. Let's explore this journey together, diving deep into the code, struggles, and insights, ensuring newcomers get the most out of this site!</p>
 
         </div>
-        <div className="w-[22vw] mt-20 ml-20 h-[22vw] rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"><img src="/src/assets/ayush.png" className={`transition-opacity duration-[0.8s] ease-in-out ${cursor ? "opacity-100" : "opacity-0"}`} alt="" /></div>
+        <div className="w-[22vw] mt-20 ml-20 h-[22vw] rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"><img src="./src/assets/ayush.png" className={`transition-opacity duration-[0.8s] ease-in-out ${cursor ? "opacity-100" : "opacity-0"}`} alt="" /></div>
     </div>
     </div>
   )
