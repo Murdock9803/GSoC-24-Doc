@@ -29,14 +29,9 @@ function LandingPage() {
         })}
       </div>
       <div className="border-t-[2px] text-[#AD88C6] border-[#AD88C6] mt-20 flex justify-between items-center py-5 px-20">
-        {["Google summer of code", "open source"].map((item, index) => (
-          <p
-            key={index}
-            className="text-md uppercase font-semibold tracking-light leading-none"
-          >
-            {item}
-          </p>
-        ))}
+        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons" className="text-md uppercase font-semibold tracking-light leading-none">Org: Creative Commons</a>
+        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/projects/ZIhUmKRN" className="text-md uppercase font-semibold tracking-light leading-none">Project: Modernize CC Resource Archive</a>
+ 
         <div className="start flex items-center gap-1 rounded-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} px-8 py-2 font-semibold uppercase rounded-full`}
