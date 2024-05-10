@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import Marquee from './components/Marquee';
 import About from './components/About';
 import LocomotiveScroll from 'locomotive-scroll';
+import Documentation from './components/Documentation';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <LandingPage  />
       <Marquee />
+      <Documentation />
       <About />
     </div>
   )
