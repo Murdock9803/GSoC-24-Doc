@@ -20,8 +20,8 @@ const Documentation = () => {
 
         desc2="I sat on the bed in my hostel room, and just reminisced all the moments in the previous 7 months. Those moments of self doubt, self motivation and what not. One of my friend was with me, He was also very happy about my selection but chose to keep calm. I called my parents and was just giggling in happiness all the time. For me, all those sleepless nights became worth it, when I was just trying to figure out the bug in my code. All the projects that I made to gain proficiency in development, worked for me. So this was the story till my selection to Google Summer of Code, will try to not get emotional (and be professional) while writing further chapters."
 
-        desc3="I would like to thank my organisation, Creative Commons for giving me this opportunity to work on the project of my choice and considering me worthy enough."
-
+        desc3="I would like to thank my organisation, Creative Commons for giving me this opportunity to work on the project of my choice and considering me worthy enough. I have always recieved the required help and guidance from the mentors whenever needed. They were welcoming and easy to communicate with."
+        
         desc4="PRO TIPS: (1) Start as early as possible (depending on your familiarity with open source). (2) If you couldn't start early, do work hard. By early I mean 7-8 months prior to application, If you are a complete beginner. (3) Start with the website repository of an organisation to sart solving easier issues first. (4) Have self confidence. (5) The most important, Be CONSISTENT."
       />
       <Accordion
