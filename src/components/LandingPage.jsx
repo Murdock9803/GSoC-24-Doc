@@ -28,15 +28,19 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="border-t-[2px] text-[#AD88C6] border-[#AD88C6] mt-20 flex justify-between items-center py-5 px-20">
-        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons" className="text-md uppercase font-semibold tracking-light leading-none">Org: Creative Commons</a>
-        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/projects/ZIhUmKRN" className="text-md uppercase font-semibold tracking-light leading-none">Project: Modernize CC Resource Archive</a>
+      <div className="border-t-[2px] text-[#AD88C6] text-[1.1vw] border-[#AD88C6] mt-20 flex justify-between items-center py-5 px-20">
+        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons" className=" uppercase font-semibold tracking-light leading-none">Org: Creative Commons</a>
+        <a target="_blank" href="https://summerofcode.withgoogle.com/programs/2024/projects/ZIhUmKRN" className=" uppercase font-semibold tracking-light leading-none">Project: Modernize CC Resource Archive</a>
  
-        <div className="start flex items-center gap-1 rounded-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className="relative start flex items-center gap-1 rounded-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+          <a
+            target="_blank"
+            className="absolute w-full h-full rounded-full z-[1]"
+            href="https://drive.google.com/file/d/1Qr8k1Q-PhjAOvfxfasAJ-lAiRakFuUWB/view?usp=drive_link"></a>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} px-8 py-2 font-semibold uppercase rounded-full`}
           >
-            Start The Project
+            My Project Proposal
           </div>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} w-10 h-10 flex items-center justify-center rounded-full`}
