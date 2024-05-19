@@ -5,6 +5,7 @@ import Marquee from './components/Marquee';
 import About from './components/About';
 import LocomotiveScroll from 'locomotive-scroll';
 import Documentation from './components/Documentation';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Marquee />
       <Documentation />
       <About />
+      <Footer />
     </div>
   )
 }
