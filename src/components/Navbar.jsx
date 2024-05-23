@@ -7,8 +7,8 @@ function Navbar() {
         
 
         <div className='text-[#AD88C6] links flex justify-between gap-[10vw]'>
-            <a className='font-saira uppercase font-semibold tracking-light leading-none capitalize text-[1.5vw]' target="_blanc" href="https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons">Org: Creative Commons</a>
-            <a className='font-saira uppercase font-semibold tracking-light leading-none capitalize text-[1.5vw]' target="_blanc" href="https://summerofcode.withgoogle.com/programs/2024/projects/ZIhUmKRN">Project: Modernize CC Resource Archive</a>
+            <a className='font-saira uppercase font-semibold tracking-light leading-none hover:underline capitalize text-[1.5vw]' target="_blanc" href="https://summerofcode.withgoogle.com/programs/2024/organizations/creative-commons">Org: Creative Commons</a>
+            <a className='font-saira uppercase font-semibold tracking-light leading-none hover:underline capitalize text-[1.5vw]' target="_blanc" href="https://summerofcode.withgoogle.com/programs/2024/projects/ZIhUmKRN">Project: Modernize CC Resource Archive</a>
         </div>
     </div>
   )
