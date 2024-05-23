@@ -1,9 +1,15 @@
 import React from "react";
 import Accordion from "./Accordion";
+import TagAccordion from "./TagAccordion";
 
 const Documentation = () => {
   return (
-    <div className="pt-8 pb-12 px-10 bg-[#393E46]">
+    <div className="pt-[1px] -mt-12 pb-12 px-10 bg-[#393E46]">
+
+      <TagAccordion
+        title="PRE-GSOC PERIOD : PERSONAL INSIGHTS"
+      />
+      
       <Accordion
         title="Welcome Everyone! + Some Back Story"
         desc1="Hello there, I welcome you to come along with me on this journey of self-realisation, Demotivation, hardwork and self-confidence. Let's start - In my freshman year at college, I had zero knowledge about Programming or how things work on the other side of the computer screen. One of my seniors then Introduced us to a program run by google - The Google Summer of Code. All I had grasped from that conversation was that to clear GSoC, one has to be very very good at coding, and Once you get selected, everyone will look upto you with immense respect (plus it pays really well). So, after thinking over it for some good amount of time (days maybe) I decided to finally..... quit the idea of clearing GSoC."
@@ -14,6 +20,7 @@ const Documentation = () => {
 
         desc4="At this point, I had gave most of my previous 6 to 7 months to GSoC. Moreover I became emotionally attached to it because It seemed to me as an opportunity to begin respecting myself again (in terms of studies and career) as in college I somewhat lagged behind my peers in academics due to the new shift from school to college. I was not able to figure it out like others, about what to pursue in the longer run. So yes, clearing GSoC became a very big deal for me, both emotionally and professionally. I informed my close friends about it, and was very nervous about the results. But, here comes one more task that I gave myself, to not get very depressed If I do not get selected, as I will not be having enough time to get sad. My internships season was on its way in 3-4 months and I had to do something this year to get that lost confidence back. With all these thoughts in mind, I waited for the final day of result. Some hindi (my mother tongue) phrases I used to say to myself - (Kaash ho jaaye GSoC) (Agar nahi bhi hua toh sambhaalna hai khudko) (Ho gaya toh sabse pehle mammi papa ko bataunga) (Chances toh hain hone ke, theek theek mehnat toh ki hai dekhte hain) (Agar ho gaya, toh acchhe se kaam karna hai). It became a really big deal for me."
       />
+
       <Accordion
         title="Congrats Ayush! you have been selected for <<<Google Summer of Code>>> with <<<Creative Commons>>>"
         desc1="After waiting for nearly 20 days, On May 1, 1800 UTC I recieved an Email from <summerofcode.google.com> which had the Subject line - GSoC 2024: Congratulations! your proposal with Creative Commons has been accepted."
@@ -21,12 +28,17 @@ const Documentation = () => {
         desc2="I sat on the bed in my hostel room, and just reminisced all the moments in the previous 7 months. Those moments of self doubt, self motivation and what not. One of my friend was with me, He was also very happy about my selection but chose to keep calm. I called my parents and was just giggling in happiness all the time. For me, all those sleepless nights became worth it, when I was just trying to figure out the bug in my code. All the projects that I made to gain proficiency in development, worked for me. So this was the story till my selection to Google Summer of Code, will try to not get emotional (and be professional) while writing further chapters."
 
         desc3="I would like to thank my organisation, Creative Commons for giving me this opportunity to work on the project of my choice and considering me worthy enough. I have always recieved the required help and guidance from the mentors whenever needed. They were welcoming and easy to communicate with."
-        
+
         desc4="PRO TIPS: (1) Start as early as possible (depending on your familiarity with open source). (2) If you couldn't start early, do work hard. By early I mean 7-8 months prior to application, If you are a complete beginner. (3) Start with the website repository of an organisation to sart solving easier issues first. (4) Have self confidence. (5) The most important, Be CONSISTENT."
       />
+
       <Accordion
         title="Comunity Bonding Period"
         desc1="Hello My Community Bonding Period is going on"
+      />
+
+      <TagAccordion
+        title="GSOC PERIOD - PROjECT WORK UPDATES"
       />
     </div>
   );
