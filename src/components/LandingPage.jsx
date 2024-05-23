@@ -29,8 +29,8 @@ function LandingPage() {
         })}
       </div>
       <div className="font-saira border-t-[2px] text-[#AD88C6] text-[1.5vw] border-[#AD88C6] mt-20 flex justify-between items-center py-5 px-20">
-        <a target="_blank" href="https://github.com/possumbilities" className=" uppercase font-semibold tracking-light leading-none">Mentor : Sara Lovell (Possumbilities)</a>
-        <a target="_blank" href="https://github.com/Murdock9803" className=" uppercase font-semibold tracking-light leading-none">Contributer : Ayush Sahu (Murdock9803)</a>
+        <a target="_blank" href="https://github.com/possumbilities" className="hover:underline uppercase font-semibold tracking-light leading-none">Mentor : Sara Lovell (Possumbilities)</a>
+        <a target="_blank" href="https://github.com/Murdock9803" className="hover:underline uppercase font-semibold tracking-light leading-none">Contributer : Ayush Sahu (Murdock9803)</a>
  
         <div className="relative start flex items-center gap-1 rounded-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <a
