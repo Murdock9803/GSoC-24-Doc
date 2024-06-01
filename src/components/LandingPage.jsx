@@ -17,7 +17,7 @@ function LandingPage() {
                     initial={{ width: 0 }}
                     animate={{ width: "9vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
-                    className='mr-[1vw] ml-[0.35vw] w-[9vw] rounded-md h-[5.5vw] relative top-0 bg-red-500 bg-[url("/src/assets/gsoc.png")] bg-cover bg-center'
+                    className='mr-[1vw] ml-[0.35vw] w-[9vw] rounded-md h-[5.5vw] relative top-0 bg-red-500 bg-[url("/src/assets/GSoC+CC.png")] bg-cover bg-center'
                   ></motion.div>
                 )}
                 <h1 className="text-[7.5vw] font-saira font-bold tracking-tight leading-[1]">
