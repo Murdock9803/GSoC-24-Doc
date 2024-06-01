@@ -15,7 +15,7 @@ function LandingPage() {
                 {index === 1 && (
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "9vw" }}
+                    animate={{ width: "16vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
                     className='mr-[1vw] ml-[0.35vw] w-[9vw] rounded-md h-[5.5vw] relative top-0 bg-red-500 bg-[url("/src/assets/GSoC+CC.png")] bg-cover bg-center'
                   ></motion.div>
