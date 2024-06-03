@@ -8,7 +8,7 @@ const Accordion = (props) => {
       <div className="bg-[#222831] rounded-lg overflow-hidden text-gray-400">
         <button
           onClick={() => setAccordionOpen(!accordionOpen)}
-          className=" px-8 py-3 flex justify-between w-full"
+          className=" px-4 sm:px-8 py-3 flex justify-between w-full"
         >
           <span className="font-bold text-[21px] tracking-wide font-saira">{props.title}</span>
           <svg
@@ -47,7 +47,7 @@ const Accordion = (props) => {
         >
           <div 
             className=
-              {`border-t-[3px] border-[#393E46] bg-zinc-900 text-[#AD88C6] font-semibold leading-7 tracking-wide px-8 overflow-hidden text-[16px] ${
+              {`border-t-[3px] border-[#393E46] bg-zinc-900 text-[#AD88C6] font-semibold leading-7 tracking-wide px-4 sm:px-8 overflow-hidden text-[16px] ${
                 accordionOpen? "py-8 transition-all duration-400 ease-all":"transition-all duration-300 ease-all"
               }`}>{props.desc1}
               <br /><br />{props.desc2}
