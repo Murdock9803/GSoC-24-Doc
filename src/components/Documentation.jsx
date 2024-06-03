@@ -4,7 +4,7 @@ import TagAccordion from "./TagAccordion";
 
 const Documentation = () => {
   return (
-    <div className="pt-[1px] -mt-12 pb-12 px-10 bg-[#393E46]">
+    <div className="pt-[1px] -mt-12 pb-12 px-2 sm:px-10 bg-[#393E46]">
 
       <TagAccordion
         title="PRE-GSOC PERIOD : PERSONAL INSIGHTS"
