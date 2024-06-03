@@ -5,8 +5,8 @@ function About() {
   const [cursor, setCursor] = useState(false);
   return (
     <div id='about' className='bg-[#393E46]'>
-      <div className='w-full py-10 bg-zinc-600 flex gap-5 text-zinc-100 rounded-tl-[40px] rounded-tr-[40px] text-black'>
-        <div className='w-[60vw] py-5 px-10'>
+      <div className='w-full py-10 bg-zinc-600 flex flex-col-reverse sm:flex-row gap-5 text-zinc-100 rounded-tl-[40px] rounded-tr-[40px]'>
+        <div className='w-full sm:w-[60vw] py-5 px-4 sm:px-10'>
             <h1 className='font-bold text-[3.5vw]  text-zinc-900'>AYUSH SAHU &lt;Murdock9803/&gt;</h1>
             <div className='w-full h-[2px] bg-zinc-900'></div>
             <a onMouseEnter={()=> setCursor(true)} onMouseLeave={()=> setCursor(false)} className='rounded-full inline-block my-5' target='_blanc' href="https://murdock9803.github.io/Ayush-Portfolio/">
@@ -19,7 +19,7 @@ function About() {
             </div>
           
         </div>
-        <div className="w-[22vw] mt-20 ml-20 h-[22vw] rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"><img src="./src/assets/ayush.png" className={`transition-opacity duration-[0.8s] ease-in-out ${cursor ? "opacity-100" : "opacity-0"}`} alt="" /></div>
+        <div className="w-[45vw] h-[45vw] sm:w-[22vw] sm:h-[22vw] mt-20 ml-20 rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"><img src="./src/assets/ayush.png" className={`transition-opacity duration-[0.8s] ease-in-out ${cursor ? "opacity-100" : "opacity-0"}`} alt="" /></div>
     </div>
     </div>
   )
