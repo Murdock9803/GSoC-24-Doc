@@ -6,8 +6,8 @@ import { FaArrowRight } from "react-icons/fa";
 function LandingPage() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="selection:bg-transparent selection:text-slate-100 w-full h-screen -mb-20 bg-zinc-900 text-[#AD88C6] pt-1">
-      <div className="textstruc mt-20 px-20">
+    <div className="selection:bg-transparent selection:text-slate-100 w-full h-[600px] sm:h-[700px] xl:h-screen -mb-20 bg-zinc-900 text-[#AD88C6] pt-1">
+      <div className="textstruc mt-12 sm:pt-20 px-8 sm:px-20">
         {["Murdock9803's", "GSoC'24", "Documentation"].map((item, index) => {
           return (
             <div className="masker" key={index}>
@@ -15,12 +15,12 @@ function LandingPage() {
                 {index === 1 && (
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "16vw" }}
+                    animate={{ width: "17vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
-                    className='mr-[1vw] ml-[0.35vw] w-[9vw] rounded-md h-[5.5vw] relative top-0 bg-red-500 bg-[url("/src/assets/gsoc-cc-centered.png")] bg-cover bg-center'
+                    className='mr-[1vw] ml-[0.35vw] w-[9vw] h-[8.5vw] rounded md:mr-[1vw] md:ml-[0.35vw] md:w-[9vw] md:h-[5.5vw] md:rounded-md relative top-0 bg-red-500 bg-[url("/src/assets/gsoc-cc-centered.png")] bg-cover bg-center'
                   ></motion.div>
                 )}
-                <h1 className="text-[7.5vw] font-saira font-bold tracking-tight leading-[1]">
+                <h1 className="text-[13vw] md:text-[7.5vw] font-saira font-bold tracking-tight leading-[1]">
                   {item}
                 </h1>
               </div>
@@ -28,7 +28,7 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="font-saira border-t-[2px] text-[#AD88C6] text-[1.5vw] border-[#AD88C6] mt-20 flex justify-between items-center py-5 px-20">
+      <div className="font-saira border-t-[1px] sm:border-t-[2px] text-[#AD88C6] text-[11px] sm:text-[1.5vw] border-[#AD88C6] mt-12 sm:mt-20 flex flex-col gap-4 sm:flex-row  justify-between items-start sm:items-center py-5 px-8 sm:px-20">
         <a target="_blank" href="https://github.com/possumbilities" className="hover:underline uppercase font-semibold tracking-light leading-none">Mentor : Sara Lovell (Possumbilities)</a>
         <a target="_blank" href="https://github.com/Murdock9803" className="hover:underline uppercase font-semibold tracking-light leading-none">Contributer : Ayush Sahu (Murdock9803)</a>
  
