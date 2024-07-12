@@ -1,13 +1,121 @@
 import React from "react";
 import Accordion from "./Accordion";
 import TagAccordion from "./TagAccordion";
+import MarkdownRenderer from "./MarkdownRenderer";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
+const week123md = `
+## Environment, Code & Ideation - Weeks 1, 2 & 3
+
+These were the initial weeks of the project which went into testing the development environment, planning upcoming UI changes and getting acquainted with the working process.  Firstly, my project mentor [Sara](https://opensource.creativecommons.org/blog/authors/sara/) guided me through my first contribution in the coding period. I was granted member status at the Creative Commons Organization on GitHub, which was both new and exciting for me.
+
+The key achievements were:
+
+- [PR#266](https://github.com/creativecommons/cc-resource-archive/pull/266) - Updated the docker-compose.yml file to the current spec. With the help of my mentor, I opened this first pull request in the coding period. The file was out of specification, as the version element at the top of docker-compose.yml file was just informative.
+- [Testing Docker Configurations](https://github.com/creativecommons/cc-resource-archive/pull/279): With immense help from mentors Sara and Timid Robot, I got the Docker environment ready for development.
+- Learned more about [Jekyll](https://jekyllrb.com/docs/) and read the [Vocabulary](https://github.com/creativecommons/vocabulary) code. Got familiar with classes in vocabulary.css and the custom CSS variables in library-vars.css. 
+- Accessibility Improvements: Learned about keyboard navigability and optimizing the website for better accessibility using semantic HTML and appropriate CSS properties.
+- Issue Listing: Identified and listed relevant issues related to semantic code and UI changes. Also added some issues as a to-do list, as suggested by my mentor.
+- Reviewed the present structure of the files, and worked on ideas to improve the structure for better understandability and grouping of similar files.
+
+At the end of these initial weeks, I realized that I have spent enough time on understanding the code and planning on things. But as my mentor suggested, things will get smoother once we start working on them practically. So I decided to increase the pace of work in the upcoming weeks to get the planned tasks executed.
+`;
+
+const week456md =`
+## Execution, Updation & Refactor - Weeks 4, 5 & 6
+
+As the midterm evaluation approached, we held weekly review meetings to plan changes and contributions. The pace picked up in weeks 5 and 6, resulting in several presentable pull requests dedicated to UI changes and code refactoring. Notable tasks executed include:
+
+### Improving File Structure
+
+With discussion with my mentor, I improved the file structure in the codebase for better understandability and maintainability. After updating the structure, the paths to all the files that were changed were modified.  This was achieved by a group of Pull Requests that were created catering to the issue. The pull requests were:
+
+- [PR#280](https://github.com/creativecommons/cc-resource-archive/pull/280) - Adds footer.html to the _includes directory.
+- [PR#281](https://github.com/creativecommons/cc-resource-archive/pull/281) - Includes footer.html to all the pages of the site.
+- [PR#282](https://github.com/creativecommons/cc-resource-archive/pull/282) - Shifted an-explanation-of-creative-commons to _resources.
+- [PR#289](https://github.com/creativecommons/cc-resource-archive/pull/289) - Improves the file structure in the codebase.
+- [PR#292](https://github.com/creativecommons/cc-resource-archive/pull/292) - Updates the paths to downloadable resources and PDFs.
+- [PR#296](https://github.com/creativecommons/cc-resource-archive/pull/296) - Updated the resource-template with new paths for images.
+
+### Listing Page UI Changes
+
+The listing.html page is responsible for the display of resource cards on the index.html and all.html pages. The resource cards had an outdated visual setup and needed to be aligned with the Internal Design System of Creative Commons known as Vocabulary. 
+Through the [PR#298](https://github.com/creativecommons/cc-resource-archive/pull/298), I performed the following tasks:
+
+- Refactored the html structure of the resource card to IMAGE - TITLE - BLURB.
+- Utilizing vocabulary, enhanced the style for thumbnail list in listing.html. Worked on the grid structure in style.css.
+- Likewise, worked on enhancing style for the thumbnail box, thumbnail title, thumbnail image and thumbnail blurb.
+- Worked on Fonts, colors, background colors, etc. according to vocabulary.
+- Assigned properties like --underline-background-color from vocabulary into style.css.
+- Formatted the style.css and listing.html files with prettier.
+- Fixed the responsiveness of the resource cards.
+- Added Documentation in style.css for understandability.
+
+And through the [PR#302](https://github.com/creativecommons/cc-resource-archive/pull/302), the following tasks were completed:
+- Added a heading to the page.
+- Added clear documentation about various sections in the file.
+- Formatted the code with prettier code formatter.
+
+All these changes gave the website a new look, aligning more closely with the standard Creative Commons design schemes.
+
+### Listing Page (All) Javascript Changes
+
+The javascript code in listing.html file resided in the <head> section of the page. The code was outdated and was lacking the ES6 Javascript concepts. For example, there were uses of var keyword, document.write() method, etc.. The code was responsible for a number of tasks related to the display of resources. It extracted the user-selected categories from the URL and then returned them as variables. Also, the javascript code was responsible for displaying the resources which contained the selected categories. 
+Through the [PR#300](https://github.com/creativecommons/cc-resource-archive/pull/300), the following tasks were completed:
+
+- Updated the functions and code to follow ES6 javascript concepts.
+- Replaced the document.write() method with Document Object Manipulation. The document.write() is old and not preferable.
+- Utilized the javascript DOM for all the tasks related to filtering of resources in listing.js.
+- Assigned checks to the categories selected by the user (which are extracted through the URL), sanitizing the input and preventing any attacks on the website.
+- Added proper documentation for all the functions and sections of code for better understandability.
+
+### Resource Page UI Changes
+
+The resource page is a layout to show various resources that are submitted in the resource archive. This layout page accepts values from the front matter of various resources. This page was overall enhanced in terms of alignment to Creative Commons’ Design System. 
+The [PR#304](https://github.com/creativecommons/cc-resource-archive/pull/304) performs the following tasks:
+
+- Refactors the whole code for resource.html page by implementing semantic HTML.
+- Improves the styling of the page in styles.css, by utilizing vocabulary.
+- Makes the page responsive. 
+- The inspiration is drawn from the [Vocabulary Blog Post Page](https://vocabulary-docs.netlify.app/specimen/contexts/blog-post.html).
+
+These three weeks saw the most significant work being merged, resulting in a refreshed interface. Despite a slow start, consistent effort and mentor support helped me catch up by the midterm evaluation, making these weeks a great learning experience.
+`;
+
+const issueTillMidmd =`
+## Issues Solved Till MidTerm
+
+The issues relevant to the project which have been solved until now are listed below:
+
+- [#17](https://github.com/creativecommons/cc-resource-archive/issues/17) - upgrade JS code in listings.html
+- [#176](https://github.com/creativecommons/cc-resource-archive/issues/176) - make thumbnails responsive
+- [#242](https://github.com/creativecommons/cc-resource-archive/issues/242) - add footer in submission and resource pages
+- [#265](https://github.com/creativecommons/cc-resource-archive/issues/265) - The docker-compose.yml file currently out of spec
+- [#267](https://github.com/creativecommons/cc-resource-archive/issues/267) - Improve documentation for Dockerfiles
+- [#269](https://github.com/creativecommons/cc-resource-archive/issues/269) - relocate footer code to separate file ‘footer.html’ for reuse
+- [#273](https://github.com/creativecommons/cc-resource-archive/issues/273) - Resource file in the wrong location
+- [#276](https://github.com/creativecommons/cc-resource-archive/issues/276) - Inconsistent docker behavior - Parsing Gemfile
+- [#283](https://github.com/creativecommons/cc-resource-archive/issues/283) - Unnecessary google analytics function in listing.html
+- [#285](https://github.com/creativecommons/cc-resource-archive/issues/285) - Unnecessary google analytics function in resource and submission.html
+- [#287](https://github.com/creativecommons/cc-resource-archive/issues/287) - The file structure in the codebase can be improved. (re-structuring)
+- [#288](https://github.com/creativecommons/cc-resource-archive/issues/288) - The style.css file is not properly organized and lacks documentation
+- [#290](https://github.com/creativecommons/cc-resource-archive/issues/290) - The download [pdf] file links at bottom of resources aren't working
+- [#293](https://github.com/creativecommons/cc-resource-archive/issues/293) - The resourcetemplate.md needs to be updated.
+- [#297](https://github.com/creativecommons/cc-resource-archive/issues/297) - Change the design of resource cards on homepage using vocabulary
+- [#165](https://github.com/creativecommons/cc-resource-archive/issues/165) - section heading for resource cards
+- [#301](https://github.com/creativecommons/cc-resource-archive/issues/301) - Add proper documentation to listing.html, refactor for structure
+- [#101](https://github.com/creativecommons/cc-resource-archive/issues/101) - Organize code with proper indentation
+- [#41](https://github.com/creativecommons/cc-resource-archive/issues/41) - UI/UX for resource page
+- [#272](https://github.com/creativecommons/cc-resource-archive/issues/272) - unwanted underline in the resource page
+`;
 
 const Documentation = () => {
   return (
     <div className="pt-[1px] -mt-12 pb-12 px-2 sm:px-10 bg-[#393E46]">
 
       <TagAccordion
-        title="PRE-GSOC PERIOD : PERSONAL INSIGHTS"
+        title="GSOC : PERSONAL INSIGHTS"
       />
       
       <Accordion
@@ -33,13 +141,39 @@ const Documentation = () => {
       />
 
       <Accordion
+        title="The Project I Am Working On"
+        desc1="Creative Commons Resource Archive, or the CC Resource Archive is a collection of resources. The idea of this site is to have a simple, easy-to-update area for keeping track of all of the useful resources that people make about Creative Commons licenses and open content topics in general. The Site is built using Jekyll, a static site generator."
+        desc2="The project - Modernize CC Resource Archive focuses on implementing a comprehensive visual overhaul to the Resource Archive to align with current Creative Commons aesthetics and functionality standards. Utilizing the Internal Design System (Vocabulary), the project aims to upgrade the visual design, implement semantic, accessible, and standards-compliant HTML, CSS, and JavaScript, and improve user experience (UX) for resource submission while ensuring site stability on GitHub Pages."
+        desc3="Through these efforts and solid documentation, the revamped Resources Archive will meet modern standards, enhance usability, and facilitate maintainability for both users and developers."
+      />
+
+      <Accordion
         title="Comunity Bonding Period"
-        desc1="Hello My Community Bonding Period is going on"
+        desc1="The community bonding period has been an incredibly enriching experience. During this time, I had the opportunity to meet my mentors, familiarize myself with the project, and engage with the vibrant community behind Creative Commons. I participated in meetings and discussions, which have deepened my understanding of the organization's values as well as the codebase. The warm welcome and the wealth of knowledge shared by the community have been truly inspiring."
+        desc2="I can surely tell, that the start of my Google Summer of Code work could not have been better. In the first meeting, We discussed about the plan ahead and also the process of submitting my work. We agreed to conduct one review meeting on every thursday (apart from some exceptions) where Me, my project Mentors and the Org admin discuss about the changes made and any doubts that I may have."
+        desc3="By the end of coding period, I knew the functioning of the codebase and was planning on the designs that need to be executed"
+      />
+
+      <Accordion
+        title="My Experience - At Midterm"
+        desc1="After being selected to GSoC, I was very happy and satisfied as it was a dream come true. As a result of this, I could not do the amount of work that I should have, in the initial weeks of the program. I had weekly review meetings with the org mentors, who constantly supported and encouraged me to catch up to the planned timeline of tasks."
+        desc2="As a result of their motivation and some extra efforts, I was able to finish the tasks that needed to be done till the midterm evaluation. At this point I feel really good that we are successful in completing the tasks till the midterm evaluation. The best thing about this is that it was always a combined effort."
+        desc3="I am planning to execute more tasks in the other half of the period, than we have till now. I’ll be faster as I have become really comfortable working with my mentors in these six weeks."
       />
 
       <TagAccordion
-        title="GSOC PERIOD - PROjECT WORK UPDATES"
+        title="GSOC : PROjECT WORK UPDATES TILL MIDTERM"
       />
+      <div className="mb-12">
+        <MarkdownRenderer content={week123md} />
+      </div>
+      <div className="mb-12">
+        <MarkdownRenderer content={week456md} />
+      </div>
+      <div className="">
+        <MarkdownRenderer content={issueTillMidmd} />
+      </div>
+      
     </div>
   );
 };

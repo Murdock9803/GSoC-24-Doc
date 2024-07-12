@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function About() {
   const [cursor, setCursor] = useState(false);
   return (
-    <div id='about' className='bg-[#393E46]'>
+    <div id='about' className='bg-[#393E46] pt-20'>
       <div className='w-full py-10 bg-zinc-600 flex flex-col-reverse sm:flex-row gap-5 text-zinc-100 rounded-tl-[40px] rounded-tr-[40px]'>
         <div className='w-full sm:w-[60vw] py-5 px-4 sm:px-10'>
             <h1 className='font-bold text-[3.5vw]  text-zinc-900'>AYUSH SAHU &lt;Murdock9803/&gt;</h1>
