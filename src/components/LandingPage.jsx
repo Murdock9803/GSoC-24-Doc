@@ -36,7 +36,7 @@ function LandingPage() {
           <a
             target="_blank"
             className="absolute w-full h-full rounded-full z-[1]"
-            href="https://drive.google.com/file/d/1Qr8k1Q-PhjAOvfxfasAJ-lAiRakFuUWB/view?usp=drive_link"></a>
+            href="https://drive.google.com/file/d/1PRjmXkojeUDORJKy0e6WYN4QQ03W4z47/view?usp=sharing"></a>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} px-[2vw] py-[0.5vw] font-semibold uppercase rounded-full`}
           >
