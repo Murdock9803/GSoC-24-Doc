@@ -10,7 +10,7 @@
 | ------------- | ------------- |
 | **Organization**:  | [Creative Commons](https://github.com/creativecommons)  |
 | **Contributor**: | [Ayush Sahu](https://github.com/Murdock9803)|
-| **Mentors:**  | <table><tr><td>**Lead**:</td><td>[Sara Lovell](https://github.com/possumbilities)</td></tr><tr><td>**Supporting**:</td><td>[Shafiya Heena](https://github.com/Shafiya-Heena), [Timid Robot Zehta](https://github.com/TimidRobot)</td></tr></table> |
+| **Mentors:**  | <table><tr><td>**Lead**:</td><td>[Sara Lovell](https://github.com/possumbilities)</td></tr><tr><td>**Support**:</td><td>[Shafiya Heena](https://github.com/Shafiya-Heena), [Timid Robot Zehta](https://github.com/TimidRobot)</td></tr></table> |
 
 ***
 
@@ -30,7 +30,7 @@ The project - ***Modernize CC Resource Archive*** focuses on implementing a comp
 
 <div align="left">
 
-The project's main focus is not just to improve the User Interface of the *Resource Archive* but also making it more accessibile and maintainable. At the completion of the project, the Resource Archive site will be at par with other Creative Commons sites, and follow the same design scheme. This will enhance the user experience with enhancements/addition of various functionalities.
+The project's main focus is not just to improve the User Interface of the *Resource Archive* but also making it more accessible and maintainable. At the completion of the project, the Resource Archive site will be at par with other Creative Commons sites, and follow the same design scheme. This will enhance the user experience with enhancements/addition of various functionalities.
 
 </div>
 
@@ -43,16 +43,16 @@ The project's main focus is not just to improve the User Interface of the *Resou
 Throughout the program timeline, the following tasks were executed/merged. As the project involved major changes in user interface, many PRs are based on CSS and JavaScript code. The resource archive is built on Jekyll as static pages, deployed with Github Pages. The local development setup is most preferably done with Docker.
 
 - ### Development Environment Optimisation and Setup - PRs [#266](https://github.com/creativecommons/cc-resource-archive/pull/266), [#268](https://github.com/creativecommons/cc-resource-archive/pull/268) and [#279](https://github.com/creativecommons/cc-resource-archive/pull/279)
-  With help from mentors and thorough testing, we were able to optimise the developemnt environment, update the `docker-compose.yml` file to the current spec, and made sure the local development experience remains seamless.
+  With help from mentors and thorough testing, we were able to optimize the development environment, update the `docker-compose.yml` file to the current spec, and made sure the local development experience remains seamless.
   
 - ### Improving File Structure - PRs [#280](https://github.com/creativecommons/cc-resource-archive/pull/280), [#281](https://github.com/creativecommons/cc-resource-archive/pull/281), [#282](https://github.com/creativecommons/cc-resource-archive/pull/282), [#289](https://github.com/creativecommons/cc-resource-archive/pull/289), [#292](https://github.com/creativecommons/cc-resource-archive/pull/292) and  [#296](https://github.com/creativecommons/cc-resource-archive/pull/296)
-  With discussion with my mentor, I improved the file structure in the codebase for better understandability and maintainability. After updating the structure, the paths to all the files that were changed were modified.  This was achieved by a group of Pull Requests that were created catering to the issue.
+  After discussing with my mentor, I improved the file structure in the codebase for better understandability and maintainability. After updating the structure, the paths to all the files that were changed were modified.  This was achieved by a group of Pull Requests that were created catering to the issue.
 
 - ### Listing Page UI Changes - PRs [#298](https://github.com/creativecommons/cc-resource-archive/pull/298) and  [#302](https://github.com/creativecommons/cc-resource-archive/pull/302)
   The `listing.html` page is responsible for the display of resource cards on the `index.html` and `all.html` pages. The resource cards had an outdated visual setup and needed to be aligned with the Internal Design System of Creative Commons known as Vocabulary.
   
 - ### Listing Page (All) JavaScript Changes - PR [#300](https://github.com/creativecommons/cc-resource-archive/pull/300)
-  The javascript code in listing.html file resided in the `<head>` section of the page. The code was outdated and was lacking the ES6 Javascript concepts. For example, there were uses of `var` keyword, `document.write()` method, etc.. The code was responsible for a number of tasks related to the display of resources. It extracted the user-selected categories from the URL and then returned them as variables. Also, the javascript code was responsible for displaying the resources which contained the selected categories. 
+  The javaScript code in `listing.html` file resided in the `<head>` section of the page. The code was outdated and was lacking the ES6 JavaScript concepts. For example, there were uses of `var` keyword, `document.write()` method, etc.. The code was responsible for a number of tasks related to the display of resources. It extracted the user-selected categories from the URL and then returned them as variables. Also, the javaScript code was responsible for displaying the resources which contained the selected categories. 
 
 - ### Resource Page UI Changes - PR [#304](https://github.com/creativecommons/cc-resource-archive/pull/304)
   The resource page is a `layout` to show various resources that are submitted in the resource archive. This layout page accepts values from the `front matter` of various resources. This page was overall enhanced in terms of alignment to Creative Commons’ Design System. 
