@@ -110,6 +110,75 @@ The issues relevant to the project which have been solved until now are listed b
 - [#272](https://github.com/creativecommons/cc-resource-archive/issues/272) - unwanted underline in the resource page
 `;
 
+const week789md =`
+## Completing The Timeline Tasks - Weeks 7, 8 and 9
+
+These three weeks were planned with the aim of completing the timeline tasks to focus on further goals of the projects. The UI-related tasks included Submission page, A guide for the newcomers to submit resources, and working on the filters.
+
+### Submission Page UI Changes
+
+The submission.html page is responsible for the area where contributors come to contribute to the resource archive with their resources about Creative Commons or Open sharing of knowledge in general. 
+With the help of the [PR#315](https://github.com/creativecommons/cc-resource-archive/pull/315), The following tasks were performed : 
+- adds a new context to the element, named submit-page.
+- refactors the whole html code for submission.html with semantic code.
+- makes the page responsive, by adding media queries wherever needed.
+- adds a step by step written guide including images, for submission of resource for new github users.
+- ensures the page meets current CC aesthetics.
+- adds documentation for better understanding and maintainability.
+- formats the files with prettier code formatter.
+
+### Submission guide For Newcomers
+
+For people not familiar with GitHub or Opening Pull Requests on GitHub, a comprehensive guide was added with step by step process to submit a resource to the resource archive. The guide included instructions to fork, clone the repository and also Open the PR by committing to the repository. This was accompanied with well-labeled images for better understandability. This work was achieved with the help of [PR#315](https://github.com/creativecommons/cc-resource-archive/pull/315). This was the final addition to the submission.html page and the whole tasks related to this page were completed by this.
+
+### Filters Placement and Functioning
+
+The resource archive utilizes filters to select similar resources. These filters are grouped in the form of three categories, TOPIC, MEDIUM and LANGUAGE. Each category has some filter options to choose from. In the previous iteration of the resource archive site, the category filters were placed in the middle of the page, and they also did not have any icon for the indication of a selected filter. 
+The [PR#316](https://github.com/creativecommons/cc-resource-archive/pull/316) makes the filters responsiveness, and more easy to access by performing the following tasks:
+- adds semantic html to index.html and all.html
+- removes the filters from index.html.
+- removes inline styles from html pages.
+- adds a new context to listing.html.
+- works on the see-all-resources link.
+- adds checkbox in place of [x] in category filters.
+- makes the filters as a sidebar.
+- makes the whole category filters responsive.
+- Re-works on the media-query breakpoints.
+- formats the code with prettier code formatter.
+- adds documentation for the index.html, all.html and style.css files.
+
+`;
+
+const week101112md =`
+## Stretch Goals And Ideation - Weeks 10, 11 and 12
+
+After the completion of the tasks assigned in the timeline, we shifted the focus to the Stretch goals suggested in my proposal, and also by my mentor ([Sara](https://github.com/possumbilities)). There were 3 major goals that were considered for a discussion. These were, Implementation of Search Functionality through [Lunr.js](https://lunrjs.com/docs/index.html), Improving accessibility through the inclusion of [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) attributes to the elements in the website, and The use of [GitHub API](https://docs.github.com/en/rest?apiVersion=2022-11-28) to automate the process of submission of resources to the site. Out of these three, the goals that were to be implemented were ARIA accessibility and LUNR.js search functionality. This was decided keeping in mind the scope of the project and the desired limit of complexity we wanted the site to have at this point.
+
+### Aria Accessibility and Search Functionsality - LUNR.js
+
+My mentor suggested that I read about WAI-ARIA accessibility to gain insights about the process and better select the number of attributes and features we need to implement. I studied about this thoroughly and also watched some videos on the topic. I realized about the importance of having these features in our site and how greatly they impact the accessibility for different users. 
+Apart from this, we wanted to implement a search feature for the resources with the help of a lightweight searching library like LUNR.js. I started to read about the library and its execution process from various sources, majorly from the [LUNR Documentation](https://lunrjs.com/docs/index.html) present in their site. After reading it and a bit of panning, I started to code for this feature. The goal was to keep the UI similar to the CC Search feature present in the header of many Creative Commons sites.
+
+`;
+
+const issueTillEndmd =`
+## Issues Solved From Midterm To End
+
+The issues relevant to the project which have been solved in the period between midterm and final week are listed below:
+- [#52](https://github.com/creativecommons/cc-resource-archive/issues/52) - use checkbox for resourcenavtopicknown
+- [#61](https://github.com/creativecommons/cc-resource-archive/issues/61) - change UI of the homepage
+- [#72](https://github.com/creativecommons/cc-resource-archive/issues/72) - UI refinement of the website
+- [#119](https://github.com/creativecommons/cc-resource-archive/issues/119) - adding icon on filter text
+- [#274](https://github.com/creativecommons/cc-resource-archive/issues/274) - Improve the UI of submission page with vocabulary
+- [#306](https://github.com/creativecommons/cc-resource-archive/issues/306) - Language List Columns Collapsing on Website 
+- [#310](https://github.com/creativecommons/cc-resource-archive/issues/310) - Add a step by step guide for submitting resources
+- [#311](https://github.com/creativecommons/cc-resource-archive/issues/311) - html markup contains inline styles
+- [#313](https://github.com/creativecommons/cc-resource-archive/issues/313) - improve mobile view layout for filter columns
+- [#314](https://github.com/creativecommons/cc-resource-archive/issues/314) - remove extra white space between main content and footer
+- [#318](https://github.com/creativecommons/cc-resource-archive/issues/318) - Links in submit page open on same page and spelling mistake-comapre
+
+`;
+
 const Documentation = () => {
   return (
     <div className="pt-[1px] -mt-12 pb-12 px-2 sm:px-10 bg-[#393E46]">
@@ -161,6 +230,19 @@ const Documentation = () => {
         desc3="I am planning to execute more tasks in the other half of the period, than we have till now. I’ll be faster as I have become really comfortable working with my mentors in these six weeks."
       />
 
+      <Accordion 
+        title="Thoughts On Completion"
+        desc1="As I mentioned in my previous blog post, Being a part of Google Summer of Code was a very big deal for me. With an organization like Creative Commons, this could not have been better. I did not only know about the organization before all this GSoC 2024 preparation, but also resonated with the idea and mission behind it, and was grateful for the learning opportunities it creates for people across the world. Being at the final week of this program makes me emotional as I had a really good time with the mentors and the project. In the weekly meetings we conducted, the amount of motivation I got every single time talking with my mentor was unmatched."
+        desc2="I was a complete newbie in terms of professional work experience, and this is the way everything should have been. I am a better individual at this point, and far more experienced. I think I will be able to guide my juniors in a better way from now onwards."
+        desc3="This program also instilled in me a newfound confidence that is needed to take on tough tasks. I believe the program is less about coding skills and more about the self-improvement journey one has with their mentors and fellow contributors. One more thing which caught my interest is reviewing the Pull Requests of other contributors. My mentor suggested that I try reviewing pull requests of new contributors for experience. “This is a great learning opportunity for you” as they said it. Exactly as I was told, this was indeed a great and enjoyable opportunity. "
+      />
+
+      <Accordion
+        title="Gratitude And Message For Future Contributors"
+        desc1="Sara (Possumbilities), Timid Robot and Shafiya heena were the best mentors I could have asked for this project program. My primary mentor, Sara, always encouraged me to be on track whenever I lagged behind in work. Considering this was a straightforward project, I did not predict the learning opportunities to be this much in number. I will always be grateful for these 12 weeks of support, learning and growth."
+        desc2="All the contributors that are hoping to contribute to this repository, or this organization, I welcome you with all my heart. If you are targeting to get selected in an Open Source mentorship program, that is a great idea. But do not just contribute to Open Source for the sake of resume building and stipend. I agree they are very good benefits, but Open Source is simply much more than this. Once you contribute to Open Source, you will fall in love with the support you get from this community, just like I did. You can find me on GitHub and on the CC-Resource-Archive repository mainly. Let’s have the conversation there!"
+      />
+
       <TagAccordion
         title="GSOC : PROjECT WORK UPDATES TILL MIDTERM"
       />
@@ -170,8 +252,17 @@ const Documentation = () => {
       <div className="mb-12">
         <MarkdownRenderer content={week456md} />
       </div>
-      <div className="">
+      <div className="mb-12">
         <MarkdownRenderer content={issueTillMidmd} />
+      </div>
+      <div className="mb-12">
+        <MarkdownRenderer content={week789md} />
+      </div>
+      <div className="mb-12">
+        <MarkdownRenderer content={week101112md} />
+      </div>
+      <div className="">
+        <MarkdownRenderer content={issueTillEndmd} />
       </div>
       
     </div>
