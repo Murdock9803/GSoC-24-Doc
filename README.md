@@ -81,6 +81,18 @@ Throughout the program timeline, the following tasks were executed/merged. As th
 
 ***
 
+## PROJECT INSIGHTS - BLOG POSTS
+
+<div align="left">
+
+- #### From Start to MidTerm - [Empowering Open Knowledge: GSoC 2024 With Creative Commons](https://opensource.creativecommons.org/blog/entries/empowering-open-knowledge-gsoc-2024-with-creative-commons/)
+- #### From MidTerm to End - [Continuing Open Collaboration: GSoC 2024 With Creative Commons]()
+  
+</div>
+
+***
+
+
 ## CONCLUSION, GRATITUDE AND MESSAGE FOR NEW CONTRIBUTORS
 
 <div align="left">
