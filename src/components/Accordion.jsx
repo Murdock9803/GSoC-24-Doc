@@ -47,12 +47,9 @@ const Accordion = (props) => {
         >
           <div 
             className=
-              {`border-t-[3px] border-[#393E46] bg-gray-950 text-sky-400 font-saira font-light leading-7 tracking-wider px-4 sm:px-8 overflow-hidden text-[18px] ${
+              {`border-t-[3px] border-[#393E46] bg-gray-950 text-sky-400 font-light leading-7 tracking-wider px-4 sm:px-8 overflow-hidden text-[18px] ${
                 accordionOpen? "py-8 transition-all duration-400 ease-all":"transition-all duration-300 ease-all"
-              }`}>{props.desc1}
-              <br /><br />{props.desc2}
-              <br /><br />{props.desc3}
-              <br /><br />{props.desc4}
+              }`}><pre className="text-wrap font-saira">{props.desc}</pre>
           </div>
         </div>
       </div>
