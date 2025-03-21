@@ -29,18 +29,16 @@ function LandingPage() {
         })}
       </div>
       <div className="font-saira border-t-[1px] sm:border-t-[2px] text-[#AD88C6] text-[11px] sm:text-[1.5vw] border-[#AD88C6] mt-12 sm:mt-20 flex flex-col gap-4 sm:flex-row  justify-between items-start sm:items-center py-5 px-8 sm:px-20">
-        <a target="_blank" href="https://github.com/possumbilities" className="hover:underline uppercase font-semibold tracking-light leading-none">Mentor : Sara Lovell (Possumbilities)</a>
-        <a target="_blank" href="https://github.com/Murdock9803" className="hover:underline uppercase font-semibold tracking-light leading-none">Contributer : Ayush Sahu (Murdock9803)</a>
  
         <div className="relative start flex items-center gap-1 rounded-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <a
             target="_blank"
             className="absolute w-full h-full rounded-full z-[1]"
-            href="https://drive.google.com/file/d/1PRjmXkojeUDORJKy0e6WYN4QQ03W4z47/view?usp=sharing"></a>
+            href="https://opensource.creativecommons.org/blog/authors/Murdock9803/"></a>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} px-[2vw] py-[0.5vw] font-semibold uppercase rounded-full`}
           >
-            My Project Proposal
+            GSoC&apos;24 Blogs Published!
           </div>
           <div
             className={` ${isHovered ? "bg-[#000] text-[#fff] border-[#000000] transition-colors duration-300" : "bg-[#AD88C6] text-[#000000] transition-colors duration-300"} w-[3vw] h-[3vw] flex items-center justify-center rounded-full`}
