@@ -19,7 +19,7 @@ function About() {
             </div>
           
         </div>
-        <div className="w-[45vw] h-[45vw] sm:w-[22vw] sm:h-[22vw] mt-20 ml-20 rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"><img src="src/assets/ayush.png" className={`transition-opacity duration-[0.8s] ease-in-out ${cursor ? "opacity-100" : "opacity-0"}`} alt="" /></div>
+        <div className="w-[45vw] h-[45vw] sm:w-[22vw] sm:h-[22vw] mt-20 ml-20 rounded-full bg-red-400 overflow-hidden bg-cover bg-center bg-[url('/src/assets/daredevil-square-wallpaper.jpg')]"></div>
     </div>
     </div>
   )
